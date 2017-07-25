@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 
 services:
    db:
@@ -31,13 +31,9 @@ services:
        WORDPRESS_DB_USER: user_name
        WORDPRESS_DB_PASSWORD: user_password
        WORDPRESS_TABLE_PREFIX: wp_
-       VIRTUAL_HOST: domain.com, www.domain.com
+       VIRTUAL_HOST: dc2.ltd, www.dc2.ltd
        VIRTUAL_PROTO: https
        VIRTUAL_PORT: 443
-       LETSENCRYPT_HOST: domain.com, www.domain.com
+       LETSENCRYPT_HOST: dc2.ltd, www.dc2.ltd
        LETSENCRYPT_EMAIL: your_email@domain.com
 
-networks:
-    default:
-       external:
-         name: webproxy
